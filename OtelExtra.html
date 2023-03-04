@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Otel Extra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+	<meta content="Themesbrand" name="author" />
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- jsvectormap css -->
+	<link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+
+	<!--Swiper slider css-->
+	<link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Layout config Js -->
+	<script src="assets/js/layout.js"></script>
+	<!-- Bootstrap Css -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!-- Icons Css -->
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<!-- App Css-->
+	<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+	<!-- custom Css-->
+	<link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+</head>
+
+<body>
+
+	<!-- Begin page -->
+	<div id="layout-wrapper">
+
+		<header id="page-topbar2">
+			<div class="navbar-header2 d-flex">
+				<div class="d-flex align-items-center">
+					<i class="ri-menu-line" onclick="btnMenu()"></i>
+				</div>
+
+				<div class="d-flex align-items-center">
+					<div class="searchbar d-flex align-items-center">
+						<input type="text" placeholder="Rezervasyon No, Müşteri Adı/Telefonu/TC'si..">
+						<button>ARA</button>
+					</div>
+					<div class="reminders counter">
+						<i class="ri-dashboard-2-line"></i>
+						<span>Hatırlatmalar</span>
+						<span class="count">1</span>
+					</div>
+					<div class="reminders">
+						<i class="ri-dashboard-2-line"></i>
+						<span>Panel Chat</span>
+					</div>
+					<div class="reminders">
+						<i class="ri-dashboard-2-line"></i>
+						<span>Extra TV</span>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<!-- ========== App Menu ========== -->
+		<div class="app-menu navbar-menu" style="background-color: #2C3E54;">
+			<!-- LOGO -->
+			<div class="navbar-brand-box" style="text-align: left;">
+				<a href="#" class="sidebar-brand d-flex justify-content-center mt-3">
+					<img src="	https://www.otelextra.com/images/logo-w.svg" alt="">
+				</a>
+
+			</div>
+
+			<div id="scrollbar">
+				<div class="container-fluid">
+
+					<div id="two-column-menu">
+					</div>
+					<ul class="navbar-nav" id="navbar-nav">
+						<div class="user d-flex align-items-center justify-content-evenly m-3">
+							<i class=" ri-account-circle-fill"></i>
+							<div class="username">
+								<p>Hoşgeldin,</p>
+								<p class="name">Serhat Üçek</p>
+								<p class="text-white-50">(Yönetici)</p>
+							</div>
+						</div>
+						<div class="user-information bg-dark bg-opacity-50 py-3 border border-danger rounded">
+							<div class="detailss">
+								<div class="detail">Satılan Oda:</div>
+								<div class="detail">Pax Sayısı:</div>
+								<div class="detail">Ciro Miktarı:</div>
+								<div class="detail">Konfirme Tutarı:</div>
+								<div class="detail">Kar Miktarı:</div>
+							</div>
+							<div class="quantities">
+								<div class="quantity">6</div>
+								<div class="quantity">10 + 1</div>
+								<div class="quantity">118855.12₺</div>
+								<div class="quantity">90695₺</div>
+								<div class="quantity">28160.12₺</div>
+							</div>
+						</div>
+						<li class="menu-title"><span data-key="t-menu">GENEL MENÜ</span></li>
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarDashboards">
+								<i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Ana Sayfa</span>
+							</a>
+
+						</li> <!-- end Dashboard Menu -->
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarApps">
+								<i class="ri-apps-2-line"></i> <span data-key="t-apps">Otel Rezervasyon</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarLayouts">
+								<i class="ri-layout-3-line"></i> <span data-key="t-layouts">Tur Rezervasyon</span>
+							</a>
+						</li> <!-- end Dashboard Menu -->
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarAuth">
+								<i class="ri-account-circle-line"></i> <span data-key="t-authentication">Müşteri Yönetimi</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarPages">
+								<i class="ri-pages-line"></i> <span data-key="t-pages">Operasyon</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarUI" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarUI">
+								<i class="ri-pencil-ruler-2-line"></i> <span data-key="t-base-ui">Muhasebe</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarAdvanceUI">
+								<i class="ri-stack-line"></i> <span data-key="t-advance-ui">Reklam Yönetimi</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarForms">
+								<i class="ri-file-list-3-line"></i> <span data-key="t-forms">Tesisler</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarTables">
+								<i class="ri-layout-grid-line"></i> <span data-key="t-tables">Turlar</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="widgets.html">
+								<i class="ri-honour-line"></i> <span data-key="t-widgets">Request Geçmişi</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarCharts">
+								<i class="ri-pie-chart-line"></i> <span data-key="t-charts">Transport</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarIcons">
+								<i class="ri-compasses-2-line"></i> <span data-key="t-icons">Site Ayarları</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarMaps">
+								<i class="ri-map-pin-line"></i> <span data-key="t-maps">Genel Ayarlar</span>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="#sidebarMultilevel" data-bs-toggle="collapse" role="button"
+								aria-expanded="false" aria-controls="sidebarMultilevel">
+								<i class="ri-share-line"></i> <span data-key="t-multi-level">İnsan Kaynakları</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- Sidebar -->
+			</div>
+		</div>
+		<!-- Left Sidebar End -->
+		<!-- Vertical Overlay-->
+		<div class="vertical-overlay"></div>
+	</div>
+
+	<!-- ============================================================== -->
+	<!-- Start right Content here -->
+	<!-- ============================================================== -->
+
+	<div class="main-content">
+		<div class="page-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<div class="row mb-3 pb-1">
+							<div class="col-12">
+								<div class="d-flex align-items-lg-center flex-lg-row flex-column">
+									<div class="flex-grow-1">
+										<h2 class="mb-1" style="color: #7391B0;">Konfirme Bekleyen Rezervasyonlar</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab2">
+							<button class="tablinks2" onclick="openTab(event, 'Talepler')">Talepler</button>
+							<button class="tablinks2" onclick="openTab(event, 'DevamEden')">Devam Eden</button>
+							<button class="tablinks2" onclick="openTab(event, 'KonfirmeTakip')" id="defaultOpen">Konfirme
+								Takip
+							</button>
+							<button class="tablinks2" onclick="openTab(event, 'Tamamlanmış')">Tamamlanmış</button>
+							<button class="tablinks2" onclick="openTab(event, 'Değişiklik')">Değişiklik</button>
+							<button class="tablinks2" onclick="openTab(event, 'İptaller')">İptaller</button>
+							<button class="tablinks2" onclick="openTab(event, 'Kısmen')">Kısmen</button>
+							<button class="tablinks2" onclick="openTab(event, 'RezervasyonArsivi')">Rezervasyon Arşivi
+							</button>
+						</div>
+						<div class="row tabcontent" id="Talepler"></div>
+						<div class="row tabcontent" id="KonfirmeTakip">
+							<div class="col-lg-12">
+								<div class="card p-3">
+									<div class="card-header align-items-center d-flex">
+										<h3 class="card-title mb-0 flex-grow-1" style="color:#7391B0">Detaylı Arama</h3>
+									</div>
+									<div class="all-inputs d-flex justify-content-between p-3">
+										<div class="left-input d-flex flex-row filter-selector">
+											<span>
+												<label for="basiInput" class="form-label">Rezervasyon No yada İsim:</label>
+												<input type="text" class="form-control" id="basiInput">
+											</span>
+											<span class="section-filter">
+												<label for="basiInput" class="form-label mt-4">TC Kimlik No:</label>
+												<input type="number" class="form-control" id="basiInput">
+											</span>
+											<button type="button" class="btn btn-primary mt-4 ms-3">Arama Yap</button>
+											<button type="button" class="btn btn-primary mt-4 ms-3 filter-button">Filtrele
+											</button>
+										</div>
+										<div class="select-box section-filter">
+											<div class="place-selector">
+												<label for="basiInput" class="form-label">Tesis Adı:</label>
+												<select class="form-select mb-3" aria-label="Default select example">
+													<option value="all" selected>Tüm Oteller</option>
+													<option value="Jura">Jura Hotels Ilgaz Mountain R.</option>
+													<option value="Dorukkaya">Dorukkaya Ski</option>
+													<option value="Richmond">Richmond Pamukkale Thermal</option>
+												</select>
+											</div>
+											<label for="basiInput" class="form-label">Bölge Adı:</label>
+											<select class="form-select mb-3" aria-label="Default select example">
+												<option selected>Yok</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+											<label for="basiInput" class="form-label">Temsilci:</label>
+											<select class="form-select mb-3" aria-label="Default select example">
+												<option selected>Tümü</option>
+												<option value="1">Satış Agent 1</option>
+												<option value="2">Satış Agent 2</option>
+												<option value="3">Satış Agent 3</option>
+											</select>
+										</div>
+										<div class="date-picker section-filter">
+											<form>
+												<label for="date" class="form-label">Rezervasyon Tarihi:</label>
+												<div class="input-group date">
+													<input type="text" class="form-control datepicker">
+													<input type="text" class="form-control datepicker">
+													<span class="input-group-append datepicker">
+														<span>
+															<i class="ri-calendar-line"></i>
+														</span>
+													</span>
+												</div>
+											</form>
+											<form>
+												<label for="date" class="form-label">Giriş Tarihi:</label>
+												<div class="input-group date">
+													<input type="text" class="form-control datepicker">
+													<input type="text" class="form-control datepicker">
+													<span class="input-group-append datepicker">
+														<span>
+															<i class=" ri-calendar-line"></i>
+														</span>
+													</span>
+												</div>
+											</form>
+											<form>
+												<label for="date" class="form-label">Çıkış Tarihi:</label>
+												<div class="input-group date">
+													<input type="text" class="form-control datepicker">
+													<input type="text" class="form-control datepicker">
+													<span class="input-group-append datepicker">
+														<span>
+															<i class=" ri-calendar-line"></i>
+														</span>
+													</span>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="search-results mb-3">
+										<h3>Arama Sonuçları</h3>
+										<hr>
+										<div class="buttons">
+											<button>Excel</button>
+											<button>PDF</button>
+											<button>Print</button>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="table-responsive table-card">
+											<table class="table align-middle table-nowrap" id="customerTable">
+												<thead class="text-muted">
+													<tr>
+														<th class="sort" data-sort="name" scope="col" style="width: 60px;">REZ
+														</th>
+														<th class="sort" data-sort="" scope="col">İsim/Soyİsim</th>
+														<th class="sort" data-sort="currency_name" scope="col">Online</th>
+														<th class="sort" data-sort="form_name" scope="col">Şube</th>
+														<th class="sort" data-sort="to_name" scope="col">Tesis Adı</th>
+														<th class="sort" data-sort="details" scope="col">Rez Tarihi</th>
+														<th class="sort" data-sort="transaction_id" scope="col">Kişi</th>
+														<th class="sort" data-sort="type" scope="col">Giriş</th>
+														<th class="sort" data-sort="amount" scope="col">Çıkış</th>
+														<th class="sort" data-sort="status" scope="col">Ödeme</th>
+														<th class="sort" data-sort="status" scope="col">Rez Tipi</th>
+														<th class="sort" data-sort="status" scope="col">Durum</th>
+														<th class="sort" data-sort="status" scope="col">İşlemler</th>
+													</tr>
+													<!--end tr-->
+												</thead>
+												<tbody class="list form-check-all filter-by-place">
+													<tr data-place="Jura Hotel Ilgaz Mountain">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Jura Hotel Ilgaz Mountain</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum bg-warning text-white">Konf Bek</span></td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Konfirme</span>
+																<span>Konf Değil</span>
+															</div>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Dorukkaya Ski">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Dorukkaya Ski</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum text-white" style="background-color: #396B9A;">Operasyon</span>
+														</td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Mail Gönder</span>
+															</div>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Dorukkaya Ski">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Dorukkaya Ski</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum text-white" style="background-color: #396B9A;">Operasyon</span>
+														</td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Mail Gönder</span>
+															</div>
+														</td>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Richmond Pamukkale Thermal">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Richmond Pamukkale Thermal</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum text-white" style="background-color: #396B9A;">Operasyon</span>
+														</td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Konfirme</span>
+																<span>Konf Değil</span>
+															</div>
+														</td>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Jura Hotel Ilgaz Mountain">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Jura Hotel Ilgaz Mountain</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum bg-warning text-white">Konf Bek</span></td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Mail Gönder</span>
+															</div>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Jura Hotel Ilgaz Mountain">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Jura Hotel Ilgaz Mountain</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum text-white" style="background-color: #396B9A;">Operasyon</span>
+														</td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Konfirme</span>
+																<span>Konf Değil</span>
+															</div>
+														</td>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Jura Hotel Ilgaz Mountain">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Jura Hotel Ilgaz Mountain</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum text-white" style="background-color: #396B9A;">Operasyon</span>
+														</td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Mail Gönder</span>
+															</div>
+														</td>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Jura Hotel Ilgaz Mountain">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Jura Hotel Ilgaz Mountain</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum text-white" style="background-color: #396B9A;">Operasyon</span>
+														</td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Mail Gönder</span>
+															</div>
+														</td>
+														</td>
+													</tr>
+													<!--end tr-->
+													<tr data-place="Jura Hotel Ilgaz Mountain">
+														<td class="id" style="display:none;"><a href="javascript:void(0);"
+																class="fw-medium link-primary">#VZ001</a>
+														</td>
+														<td>
+															<div class="d-flex flex-column align-items-center">
+																<span>23329</span>
+																<i class="ri-information-fill"></i>
+															</div>
+														</td>
+														<td class="">Test Müşterisi</td>
+														<td class="currency_name">
+															<div class="d-flex align-items-center">
+																<i class="ri-headphone-fill"></i>
+															</div>
+														</td>
+														<td class="form_name">Satış Agent</td>
+														<td class="to_name">Jura Hotel Ilgaz Mountain</td>
+														<td class="details">01.3.2023 / 19:54</td>
+														<td class="transaction_id">1 Yt</td>
+														<td class="type">03.3.2023</td>
+														<td class="">05.3.2023</td>
+														<td class="status">
+															<span class="odendi"></i>ÖDENDİ</span>
+														</td>
+														<td><span class="text-success fw-bold">₺</span> Sejour</td>
+														<td><span class="durum bg-warning text-white">Konf Bek</span></td>
+														<td>
+															<div class="islemler d-flex gap-2">
+																<span>Mail Gönder</span>
+															</div>
+														</td>
+													</tr>
+													<!--end tr-->
+												</tbody>
+											</table>
+											<!--end table-->
+											<div class="noresult" style="display: none">
+												<div class="text-center">
+													<lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop"
+														colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px">
+													</lord-icon>
+													<h5 class="mt-2">Sorry! No Result Found</h5>
+													<p class="text-muted mb-0">We've searched more than 150+ transactions We
+														did not find any
+														transactions for you search.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<!--end card-body-->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<script type="text/Javascript">
+
+
+		function btnMenu () {
+        var element = document.getElementById("sidebar")
+        element.classList.toggle("active")
+    }
+
+    function openTab (evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks2");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+	<!-- JAVASCRIPT -->
+	<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/libs/simplebar/simplebar.min.js"></script>
+	<script src="assets/libs/node-waves/waves.min.js"></script>
+	<script src="assets/libs/feather-icons/feather.min.js"></script>
+	<script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+	<script src="assets/js/plugins.js"></script>
+
+	<!-- apexcharts -->
+	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+	<!-- Vector map-->
+	<script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+	<script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+	<!--Swiper slider js-->
+	<script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Dashboard init -->
+	<script src="assets/js/pages/dashboard-ecommerce.init.js"></script>
+
+	<!-- App js -->
+	<script src="assets/js/app.js"></script>
+
+	<!-- JQUERY -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+
+	</script>
+	<script>
+		$(function () {
+			// datepicker
+			$('.datepicker').datepicker()
+			//buton filtreleme kısmı
+			$('.filter-button').on("click", function () {
+				if ($(this).hasClass("active-filter")) {
+					$(".filter-selector").removeClass("flex-column").addClass("flex-row");
+					$('.filter-button').removeClass("active-filter");
+					$(".section-filter").hide();
+				} else {
+					$(".filter-selector").removeClass("flex-row").addClass("flex-column");
+					$('.filter-button').addClass("active-filter");
+					$(".section-filter").slideDown();
+				}
+			})
+			$(".place-selector select").on("change", function () {
+				//seçilen option
+				let selectedOption = $(".place-selector select option:selected").val(); // Jura
+				$(".filter-by-place").addClass("active-filtered")
+				if (selectedOption === "all") {
+					//hepsini göster
+					$(".filter-by-place tr").show();
+					// özel tanımlı class ları sil
+					$(".filter-by-place tr").removeClass("show").removeClass("gray")
+					// aktif filtelemeyi sil
+					$(".filter-by-place").removeClass("active-filtered")
+				} else {
+					$(".filter-by-place tr").show().removeClass("show").removeClass("gray");
+					$(".filter-by-place tr").each(function (index) {
+						const elementTR = $(this); // ilk seçilen element -> sonra 2 ci, 3cü diye gidiyor.
+						const itemDataPlace = $(this).attr("data-place"); // Jura Hotel Ilgaz Mountain
+						if (!itemDataPlace.includes(selectedOption)) {
+							//gizlenecek alan
+							$(elementTR).hide()
+						} else {
+							// eğer jura ise show class ı ekle
+							$(elementTR).addClass("show")
+						}
+					})
+					//css renklendirme döngüsü
+					$(".filter-by-place tr.show").each(function (index) {
+						const elementInside = $(this);
+						if (index % 2 == 0) {
+							if ($(elementInside).is(":visible")) {
+								$(elementInside).addClass("gray-tr")
+							}
+						}
+					})
+				}
+
+
+			});
+		})
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
